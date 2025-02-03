@@ -1,0 +1,14 @@
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  align-items: center;
+  justify-content: center;
+}
+
+.lights-container {
+  display: flex;
+  gap: 20px;
+  margin: 20px;
+}
