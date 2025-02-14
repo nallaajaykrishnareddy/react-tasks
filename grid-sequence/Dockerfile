@@ -5,9 +5,14 @@ WORKDIR /app
 COPY package.json /.
 COPY yarn.lock /.
 
+
+
 RUN yarn install --frozen-lockfile
 
 COPY . .
+
+RUN yarn add --dev typescript@5.6.2
+
 RUN yarn run build
 
 FROM nginx:alpine
